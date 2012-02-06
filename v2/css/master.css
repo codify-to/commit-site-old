@@ -18,7 +18,7 @@
 
 body, html{
 	height: 100%;
-	font-family: 'DINProMedium', Times, Helvetica, Arial, sans-serif;
+	font-family: 'DINProMedium', Helvetica, Arial, sans-serif;
 	background-color: #000;
 }
 .logo {
@@ -136,6 +136,7 @@ article a:hover{
 .m-sizer {
 	width:400px;
 }
-.sizer {
-	width:640px;
+.big {
+	font-size:18px;
+	padding-right: 7px;
 }
