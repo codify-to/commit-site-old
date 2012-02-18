@@ -5,12 +5,12 @@
 }
 
 @font-face {
-    font-family: 'DINProMedium';
-    src: url('../fonts/din-webfont.eot');
-    src: url('../fonts/din-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/din-webfont.woff') format('woff'),
-         url('../fonts/din-webfont.ttf') format('truetype'),
-         url('../fonts/din-webfont.svg#DINProMedium') format('svg');
+    font-family: 'Roadgeek2005MittelschriftRg';
+    src: url('../fonts/roadgeek_2005_mittelschrift-webfont.eot');
+    src: url('../fonts/roadgeek_2005_mittelschrift-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roadgeek_2005_mittelschrift-webfont.woff') format('woff'),
+         url('../fonts/roadgeek_2005_mittelschrift-webfont.ttf') format('truetype'),
+         url('../fonts/roadgeek_2005_mittelschrift-webfont.svg#Roadgeek2005MittelschriftRg') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -18,7 +18,7 @@
 
 body, html{
 	height: 100%;
-	font-family: 'DINProMedium', Helvetica, Arial, sans-serif;
+	font-family: 'Roadgeek2005MittelschriftRg', Helvetica, Arial, sans-serif;
 	background-color: #000;
 }
 .logo {
@@ -36,7 +36,7 @@ canvas{
 	position: absolute;
 	z-index: 1000;
 	width: 300px;
-	font-size: 10pt;
+	font-size: 11pt;
 	padding: 10px;
 }
 #menu header{
@@ -46,14 +46,7 @@ canvas{
 	font-size: 24pt;
 	background-color: #000;
 }
-#menu nav header{
-	color: #eee;
-	font-size: 10pt;
-	float: left; 
-	clear: left;
-	padding: 3px 8px;
-	margin-top: 2px;
-}
+
 #menu a{
 	-moz-transition-property: background-color, color;
 	-moz-transition-duration: 0.2s;
@@ -69,7 +62,7 @@ canvas{
 	float: left; 
 	clear: left;
 	padding: 3px 8px;
-	margin: 2px 15px;
+	margin: 2px 5px;
 	text-decoration: none;
 }
 #menu a:hover{
@@ -95,7 +88,7 @@ article header.black{
 	padding: 6px 12px !important;
 }
 article p{
-	font-size: 10pt;
+	font-size: 11pt;
 	margin-bottom: 5px;
 }
 article img {

@@ -68,4 +68,4 @@ var lucasdup = {
     }
 };
 
-$(lucasdup.initialize);
+lucasdup.initialize();
