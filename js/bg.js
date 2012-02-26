@@ -165,7 +165,7 @@ var Flocker = function(numParticles){
 		context.clearRect(0, 0, canvas.width, canvas.height)
 		
 		//Setup Color
-		context.fillStyle = "rgba(100, 100, 100, " + particlesAlpha + ")";
+		context.fillStyle = "rgba(255, 255, 255, " + particlesAlpha + ")";
 		
 		//Draw each particle
 		for (i=0; i < particles.length; i++) {
