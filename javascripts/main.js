@@ -64,7 +64,7 @@ $(function(){
   			b /= box.w*box.h;
   			
   			//Draw the triangle
-  			ctx.fillStyle = "rgba("+parseInt(r)+","+parseInt(g)+","+parseInt(b)+","+0.65+")";
+  			ctx.fillStyle = "rgba("+parseInt(r)+","+parseInt(g)+","+parseInt(b)+",0.8)";
   			ctx.beginPath();
     		ctx.moveTo(tri[0].x, tri[0].y);
 			ctx.lineTo(tri[1].x, tri[1].y);
@@ -79,12 +79,12 @@ $(function(){
 		
 		// Generate the first triangles (animation)
 		setInterval(function(){
-			if (vertices.length > 15) return
+			if (vertices.length > 20) return
 
 			var w = canvas.width/4;
 			var h = canvas.height/4;
 			doDelaunay(parseInt(w+Math.random()*w*2), parseInt(h+Math.random()*h*2));
-		}, 500);
+		}, 250);
 	}
 
 	//Load background image
