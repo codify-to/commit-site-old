@@ -54,7 +54,6 @@ Delaunay.prototype = {
     return circle.r2 >= dot;
   },
 
-  // 点pが外接円に含まれるような三角形を選ぶ
   _chooseTriangles : function(triangles, p){
     var ok = [];
     var ng = [];
@@ -68,7 +67,6 @@ Delaunay.prototype = {
     return {ok:ok, ng:ng};
   },
 
-  // 三角形の集合から辺の集合へ
   _triangles2edges : function(triangles){
     var edges = [];
     for(var i=0,n=triangles.length; i<n; i++){
