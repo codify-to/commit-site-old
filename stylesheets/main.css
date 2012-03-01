@@ -62,7 +62,7 @@ footer{
 	padding: 8px 0;
 }
 .whisper{
-    float: right;
+    right: 10px;
+    position: absolute;
     color: #999;
-    padding-right: 10px;
 }

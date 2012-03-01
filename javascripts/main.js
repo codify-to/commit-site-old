@@ -5,10 +5,10 @@ $(function(){
 	//Remove the fallback image and create the canvas =D
 	$("#home .background").replaceWith("<canvas width='" + $(window).innerWidth() + "' height='" + $(window).innerHeight() + "'></canvas>");
 	canvas = $("#home canvas")[0];
-	// //Keep it the size of the screen
-	// $(window).resize(function(){
-	// 	$("#home canvas").width($(window).innerWidth()).height($(window).innerHeight());
-	// })
+	 //Keep it the size of the screen
+	 $(window).resize(function(){
+	 	$("#home canvas").width($(window).innerWidth()).height($(window).innerHeight());
+	 })
 
 	var image, vertices=[];
 	function doDelaunay(x, y){
