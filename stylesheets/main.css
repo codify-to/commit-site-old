@@ -1,0 +1,29 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: Helvetica Neue, Helvetica Arial, sans-serif;
+}
+#home .logo{
+	position: absolute;
+	pointer-events: none;
+	left: 50%;
+	top: 50%;
+	margin: -53px 0 0 -150px;
+}
+#home canvas {
+	cursor: pointer;
+}
+
+footer{
+	position: fixed;
+	bottom: 0;
+	background-color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0.7);
+	color: #666;
+	font-size: small;
+	text-align: center;
+	width: 100%;
+	padding: 3px 0;
+}
