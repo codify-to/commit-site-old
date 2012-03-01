@@ -1,9 +1,10 @@
 *{
 	margin: 0;
 	padding: 0;
+    border: 0;
 }
 body{
-	font-family: DIN, Helvetica Neue, Helvetica Arial, sans-serif;
+	font-family: Helvetica Neue, Helvetica Arial, sans-serif;
 }
 #home .logo{
 	position: absolute;
