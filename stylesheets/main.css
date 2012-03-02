@@ -20,6 +20,11 @@ section {
 	top: 50%;
 	margin: -53px 0 0 -150px;
 }
+#home .arrow{
+    position: absolute;
+    right: 5px;
+    bottom: 40px;
+}
 #home canvas {
 	cursor: pointer;
 }
