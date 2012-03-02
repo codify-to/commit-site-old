@@ -21,9 +21,11 @@ section {
 	margin: -53px 0 0 -150px;
 }
 #home .arrow{
+	pointer-events: none;
     position: absolute;
-    right: 5px;
+    left: 50%;
     bottom: 40px;
+    margin-left: -10px;
 }
 #home canvas {
 	cursor: pointer;
