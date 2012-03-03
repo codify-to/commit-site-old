@@ -21,7 +21,7 @@ section {
 	margin: -53px 0 0 -150px;
 }
 #home .arrow{
-	pointer-events: none;
+    cursor: pointer;
     position: absolute;
     left: 50%;
     bottom: 40px;

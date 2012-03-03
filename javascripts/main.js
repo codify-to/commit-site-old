@@ -1,4 +1,11 @@
 $(function(){
+    //Arrow click (scroll to bottom)
+    $(".arrow").click(function(){
+        $('html, body').animate({
+            scrollTop: $("#content").offset().top
+        }, 1000)
+    })
+    
 	//Check for canvas support
 	if (!document.createElement('canvas').getContext) return;
 
