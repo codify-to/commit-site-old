@@ -15,6 +15,7 @@ section {
 }
 #home {
     width: 100%;
+    position: relative;
 }
 #home .logo{
 	position: absolute;
