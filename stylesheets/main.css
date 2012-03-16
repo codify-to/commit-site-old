@@ -8,10 +8,13 @@ body{
     color: white;
     background-color: black;
     font-size: small;
-    overflow-x: hidden;
+    min-width: 1200px;
 }
 section {
     margin: auto;
+}
+#home {
+    width: 100%;
 }
 #home .logo{
 	position: absolute;
@@ -29,11 +32,11 @@ section {
 }
 #home canvas {
 	cursor: pointer;
-    min-width: 1100px;
 }
 #content {
     padding: 50px 50px 70px 50px;
-    width: 1100px;
+    width: 1080px;
+    margin-auto;
 }
 .column{
     width: 320px;
@@ -81,4 +84,24 @@ footer{
 .lang a {
     text-decoration: none;
     color: #999;
+}
+
+/* iPhone, Android */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    body{
+        min-width: 0;
+    }
+    .column{
+        float: none;
+        margin: auto;
+    }
+
+    #content {
+        padding: 50px 0;
+        width: 100%;
+    }
+    footer span {
+        display: none;
+    }
 }

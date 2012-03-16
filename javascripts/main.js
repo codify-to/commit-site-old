@@ -14,7 +14,10 @@ $(function(){
 	canvas = $("#home canvas")[0];
 	 //Keep it the size of the screen
 	 $(window).resize(function(){
-	 	$("#home canvas").width($(window).innerWidth()).height($(window).innerHeight());
+         canvas = $("#home canvas");
+         w = $("#home").innerWidth();
+         h = $(window).innerHeight();
+         canvas.width(w).height(h);
 	 })
 
 	var image, vertices=[];
