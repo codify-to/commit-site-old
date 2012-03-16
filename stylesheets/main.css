@@ -59,7 +59,7 @@ section {
     font-size: xx-small;
 }
 header{
-    font-size: 20px;
+    font-size: 150%;
     margin: 15px 0;
 }
 footer{
@@ -88,19 +88,22 @@ footer{
 }
 
 /* iPhone, Android */
-@media only screen and (min-width: 320px) and (max-width: 640px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
 
     body{
         min-width: 0;
-    }
-    .column{
-        float: none;
-        margin: auto;
+        font-size: 200%;
     }
 
     #content {
         padding: 50px 0;
         width: 100%;
+    }
+    .column {
+        float: none;
+        width: 70%;
+        padding: 0;
+        margin: auto;
     }
     footer span {
         display: none;
