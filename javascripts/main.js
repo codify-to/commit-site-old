@@ -92,8 +92,17 @@ $(function(){
 	}
 
 	//Load background image
-	(image = $("<img>").attr("src", "images/bg" + parseInt(Math.random()*7+1) +".jpg")).load(function(){
+    idx = parseInt(Math.random()*6+1);
+    bgColors = {
+        1: "#0F0009",
+        2: "#0F0700",
+        3: "#140007",
+        4: "#0F0700",
+        5: "#020E00",
+    };
+	(image = $("<img>").attr("src", "images/bg" + idx +".jpg")).load(function(){
 		initializeDelaunay();
+        $("html").css({background: bgColors[idx]});
 	})
 	image = image[0]
 })
