@@ -1,23 +1,16 @@
 $(function(){
-    //Arrow click (scroll to bottom)
-    $(".arrow").click(function(){
-        $('html, body').animate({
-            scrollTop: $("#content").offset().top
-        }, 1000)
-    })
-    
 	//Check for canvas support
 	if (!document.createElement('canvas').getContext) return;
 
 	//Remove the fallback image and create the canvas =D
-	$("#home .background").replaceWith("<canvas width='" + $("#home").innerWidth() + "' height='" + $(window).innerHeight() + "'></canvas>");
-	canvas = $("#home canvas")[0];
+    header = $("header")
+    header.find(".background").replaceWith("<canvas width='" + header.innerWidth() + "' height='" + header.innerHeight() + "'></canvas>");
+	canvas = header.find("canvas")[0];
 	 //Keep it the size of the screen
 	 $(window).resize(function(){
-         canvas = $("#home canvas");
-         w = $("#home").innerWidth();
-         h = $(window).innerHeight();
-         canvas.width(w).height(h);
+         w = header.innerWidth();
+         h = header.innerHeight();
+         header.find("canvas").width(w).height(h);
 	 })
 
 	var image, vertices=[];
@@ -84,7 +77,8 @@ $(function(){
 	}
 	function initializeDelaunay(){
 		$(canvas).click(function(e){
-			doDelaunay(e.pageX, e.pageY);
+            off = $(this).offset();
+			doDelaunay(e.pageX - off.left, e.pageY - off.top);
 		});
 		
 		// Generate the first triangles (animation)
