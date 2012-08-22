@@ -1,4 +1,8 @@
 $(function(){
+    // Work carousel
+    $('.work').scrollable().navigator('.workNavi')
+
+
 	//Check for canvas support
 	if (!document.createElement('canvas').getContext) return;
 
@@ -92,7 +96,7 @@ $(function(){
 	}
 
 	//Load background image
-    idx = parseInt(Math.random()*6+1);
+    idx = Math.floor(Math.random()*5)+1;
     bgColors = {
         1: "#0F0009",
         2: "#0F0700",

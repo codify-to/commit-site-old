@@ -38,6 +38,10 @@ section{
 section:nth-child(odd) {
     background-color: #1b1b1b;
 }
+.background{
+    width: 100%;
+    height: 100%;
+}
 .contact {
     font-size: 9pt;
 }
@@ -47,22 +51,85 @@ h1 {
     margin-bottom: 18px;
 }
 
-ul{
+/******* Work ******/
+.work {
+    overflow: hidden;
+    position: relative;
+    width: 930px;
+    height: 305px;
+}
+.work .content{
+    width: 20000em;
+    position: absolute;
+}
+.work article {
+    position: relative;
+    float: left;
+    width: 930px;
+    height: 310px;
+}
+.work .poster {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.work .thumb {
+    position: absolute;
+    left: 652px;
+    top: 0;
+}
+.work .text {
+    position: absolute;
+    left: 650px;
+    top: 135px;
+    padding: 18px;
+    width: 239px;
+}
+.work .text h1 {
+    font-size: 20px;
+    margin: 0;
+}
+.work .text h2 {
+    font-size: 13px;
+    color: #4D4D4D;
+    margin: 0 0 16px 0;
+}
+.work .text h1 {
+    font-size: 20px;
+}
+.workNavi{
+    margin: auto;
+}
+.workNavi a{
+    width: 10px;
+    height: 10px;
+    background: black;
+    display: block;
+    margin: 18px 10px 0 0;
+    float: left;
+}
+.workNavi a.active{
+    background: #B7B7B7 !important;
+}
+
+/**** Contact ****/
+.contact ul{
     list-style: none;
 }
-li{
+.contact li{
     width: 240px;
     float: left;
 }
-li.last {
+.contact li.last {
     float: right;
     width: auto;
 }
-a {
+.contact a {
     color: white;
     text-decoration: none;
 }
 
+/****** Footer *****/
 footer {
     color: #4D4D4D;
     font-size: x-small;
