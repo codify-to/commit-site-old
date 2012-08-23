@@ -15,7 +15,9 @@ body{
     margin: auto;
     box-shadow: #000 0px 0 7px -1px;
 }
-
+img {
+    border: none;
+}
 header {
     width: 1000px;
     height: 475px;
