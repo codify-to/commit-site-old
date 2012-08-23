@@ -17,7 +17,7 @@ body{
 }
 
 header {
-    width: 100%;
+    width: 1000px;
     height: 475px;
     position: relative;
 }
@@ -30,6 +30,15 @@ header .logo{
 }
 header canvas {
 	cursor: pointer;
+}
+header span {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: x-small;
+    padding: 3px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 section{
@@ -94,22 +103,28 @@ h1 {
     color: #4D4D4D;
     margin: 0 0 16px 0;
 }
-.work .text h1 {
-    font-size: 20px;
-}
 .workNavi{
     margin: auto;
 }
 .workNavi a{
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     background: black;
     display: block;
     margin: 18px 10px 0 0;
     float: left;
+
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
 }
 .workNavi a.active{
     background: #B7B7B7 !important;
+}
+/**** Clients ****/
+.clients img {
+    pointer-events: none;
 }
 
 /**** Contact ****/
@@ -142,6 +157,75 @@ footer {
 /* iPhone, Android */
 @media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
 
+body{
+    min-width: 0;
+    font-size: 200%;
+}
+h1 {
+    font-size: 250% !important;
+}
+
+.work {
+    overflow: visible;
+    width: 930px;
+    height: auto;
+}
+
+.workNavi {
+    display: none;
+}
+
+.work .content{
+    width: auto;
+    position: relative;
+}
+.work .content *{
+    position: relative;
+    height: auto;
+}
+
+.work article {
+    margin-bottom: 80px;
+}
+
+.work .poster {
+    width: 930px;
+    height: 429px;
+}
+.work .thumb {
+    display: none;
+}
+.work .text {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: auto;
+    padding: 0;
+}
+.work .text h1 {
+    font-size: 250%;
+}
+.work .text h2 {
+    font-size: 100%;
+    color: #4D4D4D;
+    margin: 0 0 16px 0;
+}
+
+.contact{
+    font-size: inherit;
+    position: absolute;
+    top: 475px;
+    width: 930px;
+}
+.about{
+    margin-top: 810px;
+}
+.contact li, .contact li.last{
+    width: auto;
+    float: none;
+    margin-bottom: 20px;
+}
+/*
     body{
         min-width: 0;
         font-size: 200%;
@@ -160,4 +244,5 @@ footer {
     footer span {
         display: none;
     }
+*/
 }

@@ -1,6 +1,6 @@
 $(function(){
     // Work carousel
-    $('.work').scrollable().navigator('.workNavi')
+    $('.work').scrollable({circular: true, touch: false}).autoscroll({interval: 10000}).navigator('.workNavi')
 
 
 	//Check for canvas support
@@ -89,10 +89,13 @@ $(function(){
 		setInterval(function(){
 			if (vertices.length > 20) return
 
-			var w = canvas.width/4;
-			var h = canvas.height/4;
-			doDelaunay(parseInt(w+Math.random()*w*2), parseInt(h+Math.random()*h*2));
-		}, 250);
+      centerX = canvas.width/2;
+      centerY = canvas.height/2;
+
+			var w = canvas.width*0.6;
+			var h = canvas.height*0.6;
+			doDelaunay(parseInt(centerX + (Math.random()*w - w/2)), parseInt(centerY + (Math.random()*h - h/2)));
+		}, 350);
 	}
 
 	//Load background image
