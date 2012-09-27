@@ -49,7 +49,7 @@ $(function(){
   				if(box.x2 < tri[j].x) box.x2 = tri[j].x;
   				if(box.y2 < tri[j].y) box.y2 = tri[j].y;
   			};
-  			//Now that we have the bounding box, its time to loop through
+        //Now that we have the bounding box, its time to loop through
   			//it and calculate the average color
   			box.w = box.x2-box.x1;
   			box.h = box.y2-box.y1;
@@ -79,10 +79,10 @@ $(function(){
 			ctx.fill();
 		}
 	}
-	function initializeDelaunay(){
+  function initializeDelaunay(){
 		$(canvas).click(function(e){
-            off = $(this).offset();
-			doDelaunay(e.pageX - off.left, e.pageY - off.top);
+      off = $(this).offset();
+      doDelaunay(parseInt(e.pageX - off.left), parseInt(e.pageY - off.top));
 		});
 		
 		// Generate the first triangles (animation)
