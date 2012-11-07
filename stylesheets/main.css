@@ -83,6 +83,8 @@ h1 {
     position: absolute;
     left: 0;
     top: 0;
+    width: 650px;
+    height: 300px
 }
 .work .thumb {
     position: absolute;
@@ -157,7 +159,7 @@ footer {
     clear: both;
 }
 /* iPhone, Android */
-@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+@media only screen and (min-width: 320px) and (max-width: 640px) {
 
 body{
     min-width: 0;
@@ -247,4 +249,14 @@ h1 {
         display: none;
     }
 */
+}
+
+
+/* Projects */
+.greyhound iframe{
+    width: 355px;
+    height: 200px;
+    margin-top: 59px;
+    margin-left: 36px;
+    box-shadow: 5px 5px 10px black
 }
