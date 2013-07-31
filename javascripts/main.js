@@ -113,13 +113,9 @@ $(function(){
   //
   // Works carousel
   //
-  $('.work').scrollable({circular: true, touch: false, onSeek:carouselSeek }).autoscroll({interval: 10000}).navigator('.workNavi');
-
-  // // Enable phosphor anims
-  // generatePhosphorAnimation('giraboorguer');
-  // generatePhosphorAnimation('acuvue');
-
-  // Plays/pauses the phospr on the first index
+  $('.work').scrollable({circular: true, touch: false, onSeek:carouselSeek }).autoscroll({interval: 11000}).navigator('.workNavi');
+  
+  
   function carouselSeek(event){
 
     // Get the current carousel index
@@ -134,13 +130,9 @@ $(function(){
         // Stop all animations
         allAnimations[p].item.pp.stop()
     }
-
-    // if(event.target.getIndex() != 0) {
-    //   player_giraboorguer.stop()
-    // } else {
-    //   player_giraboorguer.play()
-    // }
   }
 
+  // Workoround: Force first animation to start playing
+  allAnimations.jackPot.item.pp.play()
 
 })
