@@ -113,7 +113,7 @@ $(function(){
   //
   // Works carousel
   //
-  $('.work').scrollable({circular: true, touch: false, onSeek:carouselSeek }).autoscroll({interval: 11000}).navigator('.workNavi');
+  $('.work').scrollable({circular: true, touch: false, onSeek:carouselSeek }).autoscroll({interval: 12000}).navigator('.workNavi');
   
   
   function carouselSeek(event){
