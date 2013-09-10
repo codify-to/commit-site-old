@@ -260,3 +260,10 @@ h1 {
     margin-left: 36px;
     box-shadow: 5px 5px 10px black
 }
+.etios iframe{
+    width: 280px;
+    height: 155px;
+    margin-top: 64px;
+    margin-left: 20px;
+    box-shadow: 5px 5px 10px black
+}
